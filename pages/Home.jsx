@@ -31,7 +31,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='h-10 lg:hidden flex bg-amber-400'>
+        <div className='h-10 lg:hidden flex bg-gray-800'>
 
         </div>
 
@@ -45,9 +45,9 @@ const Home = () => {
       </section>
 
       {/* About */}
-      <section id="about" className="max-w-4xl mx-auto px-6 py-16">
-        <h3 className="text-3xl font-bold mb-6">About Me</h3>
-        <p className="text-gray-300 text-lg">
+      <section id="about" className="flex flex-col max-w-8xl px-6 py-16 bg-linear-to-r from-gray-800 to-purple-500 justify-center items-center">
+        <h3 className="text-3xl font-bold mb-6 lg:w-5xl text-left w-[90%]">About Me</h3>
+        <p className="text-gray-100 text-lg lg:w-5xl w-[90%]">
           I'm a full-stack developer with experience building scalable web apps. I enjoy clean code and creative problem-solving.
         </p>
       </section>
@@ -91,7 +91,7 @@ const Home = () => {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
           <p className="text-gray-300 mb-8">Want to collaborate or chat? Reach out!</p>
-          <a href="mailto:you@example.com" className="bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold">
+          <a href="mailto:ayodejioladeji12@gmail.com" className="bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold active:bg-black active:text-white">
             Email Me
           </a>
         </div>
