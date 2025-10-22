@@ -42,7 +42,7 @@ const Home = () => {
         <section className="text-center py-20 flex flex-col justify-center items-center bg-gray-900">
         <h2 className="text-4xl font-extrabold mb-4 w-100 text-center">Hello, I'm Joshua Oladeji 👋</h2>
         <p className="text-xl text-gray-400 mb-6">Front-end Developer • Open Source Enthusiast</p>
-        <a href="#projects" className="inline-block mt-4 bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold active:bg-black active:text-white">
+        <a href="#projects" className="inline-block bg-purple-500 text-black px-6 py-3 border rounded hover:bg-linear-to-r from-gray-900 to-purple-600 transition hover:text-white active:bg-black active:text-white hover:border hover:border-gray-400">
           View My Work
         </a>
       </section>
@@ -94,9 +94,14 @@ const Home = () => {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
           <p className="text-gray-300 mb-8">Want to collaborate or chat? Reach out!</p>
-          <a href="mailto:ayodejioladeji12@gmail.com" className="bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold active:bg-black active:text-white">
+          <div className='flex flex-wrap gap-3 justify-center items-center'>
+               <a href="mailto:ayodejioladeji12@gmail.com" className="bg-purple-500 text-black px-6 py-3 rounded hover:bg-linear-to-t from-gray-900 to-purple-600 transition hover:text-white active:bg-black active:text-white">
             Email Me
           </a>
+          <a href="https://x.com/thegreyline12" className="bg-purple-500 text-black px-6 py-3 rounded hover:bg-linear-to-t from-gray-900 to-purple-600 transition hover:text-white active:bg-black active:text-white">
+            Twitter/X
+          </a>
+          </div>
         </div>
       </section>
 
