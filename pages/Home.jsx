@@ -39,7 +39,7 @@ const Home = () => {
         <section className="text-center py-20 ">
         <h2 className="text-4xl font-extrabold mb-4">Hello, I'm Joshua Oladeji 👋</h2>
         <p className="text-xl text-gray-400 mb-6">Front-end Developer • Open Source Enthusiast</p>
-        <a href="#projects" className="inline-block mt-4 bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold">
+        <a href="#projects" className="inline-block mt-4 bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold active:bg-black active:text-white">
           View My Work
         </a>
       </section>
