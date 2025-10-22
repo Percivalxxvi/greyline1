@@ -5,6 +5,7 @@ import Pager from '../components/Pager'
 import ProjectCard from '../components/ProjectCard'
 
 const Home = () => {
+  
   return (
     <div>
         <Navpc/>
@@ -21,13 +22,15 @@ const Home = () => {
             </nav>
             </div>
         </header>
+
+        {/* Hero */}
         <div className='h-100 lg:h-130 lg:w-full flex flex-col lg:flex-row justify-start items-center bg-blue-500 bg-linear-to-r from-gray-800 to-purple-500'>
             <div className='flex flex-col lg:items-center lg:justify-center lg:h-100 lg:ml-20 lg:mr-20 p-5 rounded-lg'>
                 <h1 className='lg:text-6xl text-3xl font-bold text-white lg:text-left text-center lg:w-180'>Welcome to GreyLine Solutions</h1>
             </div>
             {/* <h1 className='text-2xl font-bold text-white'>Freelance Developer</h1> */}
-            <div className='lg:w-130 lg:h-4/4  duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:mr-5 items-center justify-center'>
-                <img className='lg:w-128, lg:h-[98%] w-95 h-90 lg:hover:mr-3 lg:hover:mb-3 duration-500' src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="" />
+            <div className='lg:w-130 lg:h-4/4 w-130 h-4/4 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:mr-5 items-center justify-center'>
+                <img className='lg:w-lg lg:h-[98%] w-95 h-90 lg:hover:mr-3 lg:hover:mb-3 duration-500' src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="" />
             </div>
         </div>
 
@@ -36,8 +39,8 @@ const Home = () => {
         </div>
 
         {/* Intro */}
-        <section className="text-center py-20 ">
-        <h2 className="text-4xl font-extrabold mb-4">Hello, I'm Joshua Oladeji 👋</h2>
+        <section className="text-center py-20 flex flex-col justify-center items-center bg-gray-900">
+        <h2 className="text-4xl font-extrabold mb-4 w-100 text-center">Hello, I'm Joshua Oladeji 👋</h2>
         <p className="text-xl text-gray-400 mb-6">Front-end Developer • Open Source Enthusiast</p>
         <a href="#projects" className="inline-block mt-4 bg-purple-500 text-white px-6 py-3 rounded hover:bg-linear-to-r from-purple-500 to-blue-500 transition hover:text-black hover:font-bold active:bg-black active:text-white">
           View My Work
