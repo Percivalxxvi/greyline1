@@ -26,8 +26,8 @@ const Home = () => {
                 <h1 className='lg:text-6xl text-3xl font-bold text-white lg:text-left text-center lg:w-180'>Welcome to GreyLine Solutions</h1>
             </div>
             {/* <h1 className='text-2xl font-bold text-white'>Freelance Developer</h1> */}
-            <div className='lg:w-130 lg:h-4/4 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:mr-5 items-center justify-center'>
-                <img className='lg:w-128, lg:h-[98%] lg:hover:mr-3 lg:hover:mb-3 duration-500' src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="" />
+            <div className='lg:w-130 lg:h-4/4  duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:mr-5 items-center justify-center'>
+                <img className='lg:w-128, lg:h-[98%] w-95 h-90 lg:hover:mr-3 lg:hover:mb-3 duration-500' src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="" />
             </div>
         </div>
 
