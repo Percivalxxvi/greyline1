@@ -40,7 +40,7 @@ const Home = () => {
 
         {/* Intro */}
         <section className="text-center py-20 flex flex-col justify-center items-center bg-gray-900">
-        <h2 className="text-4xl font-extrabold mb-4 w-100 text-center">Hello, I'm Joshua Oladeji 👋</h2>
+        <h2 className="text-3xl lg:text-4xl font-extrabold mb-4 w-80 lg:w-150 text-center">Hello, I'm Joshua Oladeji 👋</h2>
         <p className="text-xl text-gray-400 mb-6">Front-end Developer • Open Source Enthusiast</p>
         <a href="#projects" className="inline-block bg-purple-500 text-black px-6 py-3 border rounded hover:bg-linear-to-r from-gray-900 to-purple-600 transition hover:text-white active:bg-black active:text-white hover:border hover:border-gray-400">
           View My Work
