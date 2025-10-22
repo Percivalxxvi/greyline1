@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             {/* <h1 className='text-2xl font-bold text-white'>Freelance Developer</h1> */}
             <div className='lg:w-130 lg:h-4/4 w-[95%] h-4/4 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:mr-5 items-center justify-center'>
-                <img className='lg:w-lg lg:h-[98%] w-4/4 h-4/4 lg:hover:mr-3 lg:hover:mb-3 duration-500 object-cover' src={profile1} alt="" />
+                <img className='lg:w-lg lg:h-[98%] w-4/4 h-4/4 lg:hover:mr-3 lg:hover:mb-3 duration-500 object-cover rounded-3xl' src={profile1} alt="" />
             </div>
         </div>
 
