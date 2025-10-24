@@ -199,7 +199,7 @@ const Home = () => {
       {/* Blog */}
       <section
         id="blog"
-        className="flex items-center justify-center h-fit bg-linear-to-t from-gray-800 to-purple-500 "
+        className="flex items-center justify-center h-fit lg:bg-linear-to-t from-gray-800 to-purple-500 "
       >
         <div className="flex flex-wrap sm:grid-cols-2 md:grid-cols-3 lg:gap-2 gap-1 w-4/4 items-center justify-center pt-2 pb-2">
           {blogs.map((blog, index) => (
