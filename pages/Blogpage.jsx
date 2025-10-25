@@ -2,20 +2,25 @@ import React from 'react'
 import Navpc from '../components/Navpc'
 import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { ArrowLeft } from "lucide-react";
 
 const Blogpage = () => {
   const {state} = useLocation()
   return (
     <div>
       <Navpc page="blogpage" />
-      <div className='flex flex-row-reverse gap-5 items-center justify-between mr-10 ml-4'>
+      <div className="flex flex-row-reverse gap-5 items-center justify-between mr-10 ml-4">
         <h1 className="text-2xl font-bold text-center mt-2 mb-2">Blog Post</h1>
-        <Link className="lg:hidden text-lg bg-gray-500 border text-black px-1.5" to="/">
-           ⬅️ Back
+        <Link
+          className="lg:hidden flex text-lg border text-white px-1.5 items-center active:bg-white active:text-black"
+          to="/"
+        >
+          <ArrowLeft className="mr-1 text-blue-400 active:bg-white active:text-black" />
+          Back
         </Link>
       </div>
       <div className="flex lg:flex-row flex-col lg:h-[78vh] bg-gray-300">
-        <div className="lg:h-4/4 lg:w-[45%] h-60">
+        <div className="lg:h-4/4 lg:w-[45%] h-50">
           <img
             className="w-full h-full object-cover"
             src={state.image}

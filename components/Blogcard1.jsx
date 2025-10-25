@@ -1,14 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Blogcard = ({ image, title, description, author, date, link, content }) => {
-  const navigate = useNavigate()
+const Blogcard1 = ({
+  image,
+  title,
+  description,
+  author,
+  date,
+  link,
+  content,
+}) => {
+  const navigate = useNavigate();
   return (
-    <div
-      className="max-w-sm lg:bg-gray-300 bg-[#EDEDEDCC] lg:rounded-2xl rounded-lg lg:w-80 w-[49%] lg:h-100 h-fit pb-1 shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-500"
-    >
+    <div className="max-w-sm lg:bg-gray-300 bg-[#EDEDEDCC] lg:rounded-2xl rounded-lg lg:w-80 w-[95%] lg:h-100 h-fit shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-500">
       {/* Image */}
-      <div className="lg:h-48 h-25 w-full overflow-hidden">
+      <div className="lg:h-48 h-40 w-full overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -22,18 +28,18 @@ const Blogcard = ({ image, title, description, author, date, link, content }) =>
           <h3 className="lg:text-lg text-md font-semibold text-left text-gray-800 lg:mb-2 mb-0.6 line-clamp-2">
             {title}
           </h3>
-          <p className="text-gray-900 lg:text-black text-sm line-clamp-3 h-15 text-left">
+          <p className="text-gray-900 lg:text-black text-sm line-clamp-3 h-fit text-left bg-amber-300">
             {description}
           </p>
         </div>
 
         {/* Footer */}
-        <div className="lg:mt-4 mt-1 flex items-left w-4/4 lg:justify-between justify-between text-sm text-gray-500 mb-0.5">
+        <div className="lg:mt-4 mt-1 flex items-left w-4/4 lg:justify-between justify-between text-sm text-gray-500 mb-1.5">
           <div>
-            <span className="font-bold lg:text-[14px] text-[11px] text-gray-700">
+            <span className="font-bold lg:text-[14px] text-[12px] text-gray-700">
               {author}
             </span>
-            <span className="lg:ml-2 ml-0.5 lg:text-[14px] text-[11px] text-gray-700">
+            <span className="lg:ml-2 ml-2.5 lg:text-[14px] text-[12px] text-gray-700">
               • {date}
             </span>
           </div>
@@ -71,7 +77,7 @@ const Blogcard = ({ image, title, description, author, date, link, content }) =>
             },
           })
         }
-        className="lg:hidden bg-gray-300 border text-black  w-4/4 h-fit rounded-md active:bg-black active:text-white transition-colors duration-300"
+        className="lg:hidden bg-gray-300 border text-black  w-4/4 h-fit rounded-lg active:bg-black active:text-white transition-colors duration-300"
       >
         Read More
       </button>
@@ -79,4 +85,4 @@ const Blogcard = ({ image, title, description, author, date, link, content }) =>
   );
 };
 
-export default Blogcard;
+export default Blogcard1;

@@ -5,6 +5,7 @@ import Pager from "../components/Pager";
 import ProjectCard from "../components/ProjectCard";
 import profile1 from "../src/assets/profile1.png";
 import Blogcard from "../components/Blogcard";
+import BackToTop from "../components/Backtotop";
 
 const Home = () => {
   const blogs = [
@@ -59,28 +60,44 @@ const Home = () => {
       <Navpc />
       {/* <Pager/> */}
 
-      <header className="bg-gray-800 p-2 shadow-md lg:hidden sticky top-0 w-full z-999 border-b-2 border-grey-0">
+      <header className="bg-gray-800 p-3 shadow-md lg:hidden fixed top-0 w-full z-999 border-b-2 border-grey-0">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
           {/* <h1 className="text-2xl font-bold">GreyLine Solutions</h1> */}
-          <nav className="space-x-6">
-            <a href="#about" className="hover:text-indigo-400">
+          <nav className="space-x-4">
+            <a
+              href="#about"
+              className="hover:text-indigo-400 active:text-indigo-400 transition-colors duration-300"
+            >
               About
             </a>
-            <a href="#projects" className="hover:text-indigo-400">
+            <a
+              href="#projects"
+              className="hover:text-indigo-400 active:text-indigo-400 transition-colors duration-300"
+            >
               Projects
             </a>
-            <a href="#skills" className="hover:text-indigo-400">
+            <a
+              href="#skills"
+              className="hover:text-indigo-400 active:text-indigo-400 transition-colors duration-300"
+            >
               Skills
             </a>
-            <a href="#contact" className="hover:text-indigo-400">
+            <a
+              href="#contact"
+              className="hover:text-indigo-400 active:text-indigo-400 transition-colors duration-300"
+            >
               Contact
             </a>
-            <a href="#blog" className="hover:text-indigo-400">
+            <a
+              href="#blog"
+              className="hover:text-indigo-400 active:text-indigo-400 transition-colors duration-300"
+            >
               Blog
             </a>
           </nav>
         </div>
       </header>
+      <div className="h-10 lg:hidden flex"></div>
 
       {/* Hero */}
       <div className="h-fit lg:h-100 lg:w-full w-full flex flex-col lg:flex-row lg:justify-center items-center justify-center bg-blue-500 bg-linear-to-t from-gray-800 to-purple-500">
@@ -90,7 +107,7 @@ const Home = () => {
           </h1>
         </div>
         {/* <h1 className='text-2xl font-bold text-white'>Freelance Developer</h1> */}
-        <div className="lg:w-100 lg:h-100 w-[75%] h-90 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:ml-5 items-center justify-center">
+        <div className="lg:w-100 lg:h-100 w-[75%] h-70 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:ml-5 items-center justify-center">
           <img
             className="lg:w-lg lg:h-[98%] w-4/4 h-4/4 lg:hover:scale-102 duration-500 object-cover rounded-3xl"
             src={profile1}
@@ -99,10 +116,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="h-10 lg:hidden flex bg-gray-800"></div> */}
-
       {/* Intro */}
-      <section className="text-center py-20 flex h-60 flex-col justify-center items-center bg-gray-900">
+      <section className="text-center py-20 flex h-65 flex-col justify-center items-center bg-gray-900">
         <h2 className="text-3xl lg:text-4xl font-extrabold mb-4 w-80 lg:w-150 text-center">
           Hello, I'm Joshua Oladeji 👋
         </h2>
@@ -116,21 +131,18 @@ const Home = () => {
           View My Work
         </a>
       </section>
-
       {/* About */}
-      <section
-        id="about"
-        className="flex flex-col max-w-8xl px-6 py-16 bg-linear-to-tl from-black to-purple-500 justify-center items-center"
+      <section id="about"
+        className="flex flex-col max-w-8xl px-6 py-16 lg:h-40 h-55 bg-linear-to-tl from-black to-purple-500 justify-center items-center"
       >
         <h3 className="text-3xl font-bold mb-6 lg:w-5xl text-left w-[90%]">
           About Me
         </h3>
         <p className="text-gray-100 text-lg lg:w-5xl w-[90%]">
-          I'm a full-stack developer with experience building scalable web apps.
+          I'm a front-end developer with experience building scalable web apps.
           I enjoy clean code and creative problem-solving.
         </p>
       </section>
-
       {/* Projects */}
       <section id="projects" className="bg-gray-900 py-16">
         <div className="max-w-6xl mx-auto px-6">
@@ -154,7 +166,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Skills */}
       <section id="skills" className="max-w-4xl mx-auto px-6 py-16">
         <h3 className="text-3xl font-bold mb-6">Skills</h3>
@@ -171,9 +182,8 @@ const Home = () => {
           )}
         </div>
       </section>
-
       {/* Contact */}
-      <section id="contact" className="bg-gray-800 py-16">
+      <section id="contact" className="bg-gray-800 py-16 lg:border-t-0">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold mb-6">Get in Touch</h3>
           <p className="text-gray-300 mb-8">
@@ -195,18 +205,18 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Blog */}
       <section id="blog"
-        className="flex items-center justify-center h-fit pt-2 pb-2 lg:bg-linear-to-t from-gray-800 to-purple-500 "
+        className="flex flex-col items-center justify-center h-fit pt-2 pb-2 bg-linear-to-b from-gray-800 to-purple-500 lg:border-t-0"
       >
-        <div className="flex flex-wrap sm:grid-cols-2 md:grid-cols-3 lg:gap-2 gap-0.5 w-4/4 items-center justify-center pt-2 pb-2">
+        <div className="text-3xl font-bold mb-2">BLOGS</div>
+        <div className="flex flex-wrap sm:grid-cols-2 md:grid-cols-3 lg:gap-4 gap-1.5 w-4/4 items-center justify-center pt-2 pb-2">
           {blogs.map((blog, index) => (
             <Blogcard key={index} {...blog} />
           ))}
         </div>
       </section>
-
+      <BackToTop />
       <footer className="bg-gray-900 text-center py-6 border-t border-gray-700">
         <p className="text-gray-500 text-sm">
           &copy; 2025 GreyLine Solutions. All rights reserved.
