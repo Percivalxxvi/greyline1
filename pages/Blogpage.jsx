@@ -8,10 +8,10 @@ const Blogpage = () => {
   return (
     <div>
       <Navpc page="blogpage" />
-      <div className='flex gap-5 items-center justify-between mr-4 ml-10'>
+      <div className='flex flex-row-reverse gap-5 items-center justify-between mr-10 ml-4'>
         <h1 className="text-2xl font-bold text-center mt-2 mb-2">Blog Post</h1>
-        <Link className="text-2xl" to="/">
-          Back
+        <Link className="lg:hidden text-lg bg-gray-500 border text-black px-1.5" to="/">
+           ⬅️ Back
         </Link>
       </div>
       <div className="flex lg:flex-row flex-col lg:h-[78vh] bg-gray-300">
@@ -22,7 +22,7 @@ const Blogpage = () => {
             alt=""
           />
         </div>
-        <div className="flex flex-col lg:w-[55%] p-10">
+        <div className="flex flex-col lg:w-[55%] lg:p-10 p-3">
           <h1 className="text-2xl font-bold text-black">{state.title}</h1>
           <p className="text-black font-medium">{state.description}</p>
           <div className="h-fit">

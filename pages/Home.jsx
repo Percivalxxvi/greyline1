@@ -55,11 +55,11 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navpc />
       {/* <Pager/> */}
 
-      <header className="bg-gray-800 p-6 shadow-md lg:hidden">
+      <header className="bg-gray-800 p-2 shadow-md lg:hidden sticky top-0 w-full z-999 border-b-2 border-grey-0">
         <div className="max-w-7xl mx-auto flex justify-center items-center">
           {/* <h1 className="text-2xl font-bold">GreyLine Solutions</h1> */}
           <nav className="space-x-6">
@@ -197,11 +197,10 @@ const Home = () => {
       </section>
 
       {/* Blog */}
-      <section
-        id="blog"
-        className="flex items-center justify-center h-fit lg:bg-linear-to-t from-gray-800 to-purple-500 "
+      <section id="blog"
+        className="flex items-center justify-center h-fit pt-2 pb-2 lg:bg-linear-to-t from-gray-800 to-purple-500 "
       >
-        <div className="flex flex-wrap sm:grid-cols-2 md:grid-cols-3 lg:gap-2 gap-1 w-4/4 items-center justify-center pt-2 pb-2">
+        <div className="flex flex-wrap sm:grid-cols-2 md:grid-cols-3 lg:gap-2 gap-0.5 w-4/4 items-center justify-center pt-2 pb-2">
           {blogs.map((blog, index) => (
             <Blogcard key={index} {...blog} />
           ))}
