@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 
-const Backtotop = () => {
+const Totop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -34,4 +34,4 @@ const Backtotop = () => {
   );
 };
 
-export default Backtotop;
+export default Totop;
